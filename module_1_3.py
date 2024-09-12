@@ -4,5 +4,6 @@ age = 35
 print('Age:', age)
 new_age = age + 6
 print('New age:', new_age)
-is_student = 'True'
-print('Is Student:', is_student)
+is_student = True
+print('Is Student:',is_student)
+print(type(is_student))
