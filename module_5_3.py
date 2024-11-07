@@ -22,7 +22,8 @@ class House:
 
 
     def __eq__(self, other):
-        return self.number_of_floors == other.number_of_floors
+        fl_other = other if isinstance(other, int) else other.number_of_floors
+        return self.number_of_floors == fl_other
 
 
     def __lt__(self, other):
@@ -46,7 +47,8 @@ class House:
 
 
     def __add__(self, value):
-        self.number_of_floors += value
+        add_fl = value if isinstance(value, int) else value.number_of_floors
+        self.number_of_floors += add_fl
         return self
 
 
