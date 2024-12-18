@@ -10,7 +10,6 @@ def personal_sum(numbers):
     return result, incorrect_date
 
 
-
 def calculate_average(numbers):
     try:
         total, incorrect_date  = personal_sum(numbers)
